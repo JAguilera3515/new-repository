@@ -5,5 +5,7 @@ Diagram
                 |
                [VM]
                
-Single-Sign-On LDAP server with networking file server               
+Single-Sign-On LDAP server with networking file server 
+For our SSO we will use Kubernetes, as of right now we will install a Kubernetes NFS(Network File System) on a VM 
+for the file system storage. 
                
