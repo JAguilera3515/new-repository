@@ -4,10 +4,7 @@ Fernando Zavala: fz875241@wcupa.edu
 Jose Aguilera: ja869158@wcupa.edu
 Joseph Backowski: JB846805@wcupa.edu
 
-  The project we have chosen is the installation and deployment option. Where we will launch a Single-Sign-On LDAP server 
-  that will suport a network file system. This file system will be some what like Amazon s2 cloud services but much more 
-  less complex and more of a local thing insead of global. The network will have a Single-Sign-On LDAP, where LDAP will 
-  store user and group information. Also, for SSO we will use a kubernetes infrastructure. Where we will launch either a linux
-  or some form of virtual machine to the cloud. We will also require other services for SSO that we will be adding as we 
-  progress through the development of the project. We are thinking of using something like Microsoft active directory as 
-  our starting position or looking for other examples. 
+  The project we have chosen is the installation and deployment option. Where we will use Vault which is an image that is 
+  used to store and secure private data such as passwords. This information will be stored on a SQL database that will be accesible to
+  users with their corresponding username and password through the web. Vault is used to secure the database. We will be using Docker
+  for this.
