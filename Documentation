@@ -1,1 +1,9 @@
+Relavent information Required
 
+Diagram
+[Files] <- [VM] <- [Cloud(SSO)] -> [VM]
+                |
+               [VM]
+               
+               
+               
