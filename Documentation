@@ -1,11 +1,15 @@
 Relavent information Required
 
 Diagram
-[Files System] <- [VM] <- [Cloud(SSO)] -> [VM]
+[Vault] <- [VM] <- [Interim Node(Authenticator] -> [VM] <- [Front End Login Page] <-[VM]
                 |
                [VM]
-               
-Single-Sign-On LDAP server with networking file server 
-For our SSO we will use Kubernetes, as of right now we will install a Kubernetes NFS(Network File System) on a VM 
-for the file system storage. 
+ 
+Install Vault from Docker Hub on VM,
+Use an Authenticator image on another VM to implement security and so that users can access their corresponding data
+Front End Login Page will be the web server that holds the information which will prompt user to login
+ 
+Ports needed to be open: 
+open port 8200 
+open port corresponding to Front End Login Page.
                
