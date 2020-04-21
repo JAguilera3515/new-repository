@@ -12,7 +12,7 @@ request = pc.makeRequestRSpec()
 node = request.RawPC("node")
 
 # Install and execute a script that is contained in the repository.
-ode.addService(pg.Execute(shell="/bin/sh", command="sudo apt install docker.io"))
+node.addService(pg.Execute(shell="/bin/sh", command="sudo apt install docker.io"))
 
 node.addService(pg.Execute(shell="sh", command="sudo bash /local/repository/install_docker.sh"))
 node.addService(pg.Execute(shell="sh", command="cd /local/repository"))
