@@ -12,7 +12,9 @@ request = pc.makeRequestRSpec()
 node = request.RawPC("node")
 
 # Install and execute a script that is contained in the repository.
-node.addService(pg.Execute(shell="sh", command="/local/repository/docker-compose.yml"))
+ode.addService(pg.Execute(shell="/bin/sh", command="sudo apt install docker.io"))
+
+node.addService(pg.Execute(shell="/bin/sh", command="/local/repository/docker-compose.yml"))
 
 # Print the RSpec to the enclosing page.
 pc.printRequestRSpec(request)
