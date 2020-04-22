@@ -9,6 +9,9 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
 sudo apt-get install -y httping
 sudo apt-get install -y jq
 
+cd /local/repository
+docker-compose up -d
+
 # the username needs to be changed
 while IFS= read -r line; do
   sudo usermod -aG docker $line
